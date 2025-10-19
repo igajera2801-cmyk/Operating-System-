@@ -152,9 +152,8 @@ rm /dev/shm/sem_*
 ```
 
 ## Author
-[Your Name]
-[Your Email]
-[Date]
+Ishan Gajera
+10/19/2025
 
 ## License
 This project is created for educational purposes as part of Operating Systems coursework.

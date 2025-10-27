@@ -1,0 +1,145 @@
+Test run at: Mon Oct 27 00:30:00 UTC 2025
+
+=== PRODUCER OUTPUT ===
+========== PRODUCER PROGRAM STARTED ==========
+Table size: 2
+Creating producer threads...
+
+[Producer 1] Attempting to produce item 1001
+[Producer 1] Placed item 1001 at position 0
+[Producer 1] Table now has 1 items
+[Producer 2] Attempting to produce item 2001
+[Producer 2] Placed item 2001 at position 1
+[Producer 2] Table now has 2 items
+[Producer 1] Attempting to produce item 1002
+[Producer 2] Attempting to produce item 2002
+[Producer 1] Placed item 1002 at position 0
+[Producer 1] Table now has 2 items
+[Producer 2] Placed item 2002 at position 1
+[Producer 2] Table now has 2 items
+[Producer 2] Attempting to produce item 2003
+[Producer 1] Attempting to produce item 1003
+[Producer 2] Placed item 2003 at position 0
+[Producer 2] Table now has 2 items
+[Producer 1] Placed item 1003 at position 1
+[Producer 1] Table now has 2 items
+[Producer 2] Attempting to produce item 2004
+[Producer 2] Placed item 2004 at position 0
+[Producer 2] Table now has 2 items
+[Producer 1] Attempting to produce item 1004
+[Producer 1] Placed item 1004 at position 1
+[Producer 1] Table now has 2 items
+[Producer 2] Attempting to produce item 2005
+[Producer 2] Placed item 2005 at position 0
+[Producer 2] Table now has 2 items
+[Producer 1] Attempting to produce item 1005
+[Producer 2] Attempting to produce item 2006
+[Producer 1] Placed item 1005 at position 1
+[Producer 1] Table now has 2 items
+[Producer 1] Attempting to produce item 1006
+[Producer 2] Placed item 2006 at position 0
+[Producer 2] Table now has 2 items
+[Producer 1] Placed item 1006 at position 1
+[Producer 1] Table now has 2 items
+[Producer 1] Attempting to produce item 1007
+[Producer 1] Placed item 1007 at position 0
+[Producer 1] Table now has 1 items
+[Producer 2] Attempting to produce item 2007
+[Producer 2] Placed item 2007 at position 1
+[Producer 2] Table now has 2 items
+[Producer 1] Attempting to produce item 1008
+[Producer 1] Placed item 1008 at position 0
+[Producer 1] Table now has 2 items
+[Producer 2] Attempting to produce item 2008
+[Producer 2] Placed item 2008 at position 1
+[Producer 2] Table now has 2 items
+[Producer 2] Attempting to produce item 2009
+[Producer 1] Attempting to produce item 1009
+[Producer 2] Placed item 2009 at position 0
+[Producer 2] Table now has 2 items
+[Producer 1] Placed item 1009 at position 1
+[Producer 1] Table now has 2 items
+[Producer 2] Attempting to produce item 2010
+[Producer 1] Attempting to produce item 1010
+[Producer 2] Placed item 2010 at position 0
+[Producer 2] Table now has 2 items
+[Producer 1] Placed item 1010 at position 1
+[Producer 1] Table now has 2 items
+[Producer 2] Finished producing
+[Producer 1] Finished producing
+
+========== PRODUCER PROGRAM COMPLETED ==========
+Note: Semaphores and shared memory remain for consumer
+
+=== CONSUMER OUTPUT ===
+========== CONSUMER PROGRAM STARTED ==========
+Table size: 2
+Current items in table: 2
+Creating consumer threads...
+
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 1001 from position 0
+[Consumer 1] Table now has 1 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 2001 from position 1
+[Consumer 2] Table now has 1 items
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 1002 from position 0
+[Consumer 1] Table now has 1 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 2002 from position 1
+[Consumer 2] Table now has 1 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 2003 from position 0
+[Consumer 2] Table now has 1 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 1003 from position 1
+[Consumer 2] Table now has 1 items
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 2004 from position 0
+[Consumer 1] Table now has 1 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 1004 from position 1
+[Consumer 2] Table now has 1 items
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 2005 from position 0
+[Consumer 1] Table now has 1 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 1005 from position 1
+[Consumer 2] Table now has 1 items
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 2006 from position 0
+[Consumer 1] Table now has 1 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 1006 from position 1
+[Consumer 2] Table now has 0 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 1007 from position 0
+[Consumer 2] Table now has 1 items
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 2007 from position 1
+[Consumer 1] Table now has 1 items
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 1008 from position 0
+[Consumer 1] Table now has 1 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 2008 from position 1
+[Consumer 2] Table now has 1 items
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 2009 from position 0
+[Consumer 1] Table now has 1 items
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 1009 from position 1
+[Consumer 1] Table now has 1 items
+[Consumer 2] Attempting to consume item
+[Consumer 2] Retrieved item 2010 from position 0
+[Consumer 2] Table now has 1 items
+[Consumer 1] Attempting to consume item
+[Consumer 1] Retrieved item 1010 from position 1
+[Consumer 1] Table now has 0 items
+[Consumer 2] Finished consuming
+[Consumer 1] Finished consuming
+
+========== CONSUMER PROGRAM COMPLETED ==========
+Cleaning up shared resources...
+Cleanup completed
